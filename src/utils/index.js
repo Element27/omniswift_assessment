@@ -1,0 +1,1 @@
+export const baseUrl = "https://test.omniswift.com.ng/api/";
