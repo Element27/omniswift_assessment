@@ -12,7 +12,7 @@ export default function ResultsModal({ isOpen, onClose, student }) {
   if (resultsError) return <div className="w-[90%] max-w-2xl h-[360px] max-h-[400px]   flex items-center justify-center ">{resultsError}</div>
 
   return (
-    <div className="absolute top-0 left-0 w-full h-full lg:h-screen overflow-y-scroll py-10 flex items-center justify-center bg-black/50 z-20">
+    <div className="absolute top-0 left-0 w-full h-screen overflow-y-scroll py-10 flex items-center justify-center bg-black/50 z-20">
       <div className="relative w-full h-full flex items-center justify-center">
         <div className=" absolute w-full h-full cursor-pointer" onClick={onClose} />
         <div className="bg-white p-4 shadow-lg w-[90%] max-w-2xl mt-20 relative z-30">

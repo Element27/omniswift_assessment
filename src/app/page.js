@@ -65,14 +65,15 @@ export default function Home() {
     setSelectedLevel("")
     setSelectedState("")
     setSelectedGender("")
+    fetchData();
   }
 
 
 
   return (
-    <div className="p-4 min-h-screen  bg-zinc-100 ">
+    <div className=" min-h-screen  bg-zinc-100 ">
 
-      <div className="bg-white/90 m-5 px-4 lg:px-10 py-8 ">
+      <div className="bg-white/90 m-2 lg:m-5 px-4 lg:px-10 py-8 ">
 
         <h2 className="text-xl font-bold">
           Filter Student Table By:
@@ -89,7 +90,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-white/90 m-5  px-4 lg:px-10 pb-8 relative h-[55vh] overflow-y-scroll scrollable-area">
+      <div className="bg-white/90 m-2 lg:m-5  p2-4 lg:px-10 pb-8 relative h-[55vh] overflow-y-scroll scrollable-area">
         <div className="w-full sticky top-0 left-0 bg-white h-8  z-10 " />
         {loading ? <div className="h-full w-full flex items-center justify-center ">
           <div style={{ backgroundImage: "url('/assets/logo.png')", }} className="animate-pulse bg-cover bg-center w-[100px] h-[100px]" />
