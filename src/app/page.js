@@ -68,6 +68,7 @@ export default function Home() {
     fetchData();
   }
 
+  console.log('students', students?.length)
 
 
   return (
@@ -109,7 +110,7 @@ export default function Home() {
               </tr>
             </thead>
             <tbody>
-              {students?.length === 0 ? <tr className="text-center"><td className="py-10" colSpan={8}>No Student data found..!</td></tr> :
+              {!students?.length || students?.length === 0 ? <tr className="text-center"><td className="py-10" colSpan={8}>No Student data found..!</td></tr> :
                 <>
                   {students?.map((student, i) => (
                     <tr key={student?.id} className="border-b text-xs">
