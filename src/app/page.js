@@ -81,13 +81,13 @@ export default function Home() {
         </h2>
 
 
-        <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-8 mt-10">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
           <DropDownComp label="Age" options={age} placeholder={"select age"} onChange={(value) => setSelectedAge(value)} />
           <DropDownComp label="State" options={states} placeholder={"select state"} onChange={(value) => setSelectedState(value)} />
           <DropDownComp label="Level" options={levels} placeholder={"select level"} onChange={(value) => setSelectedLevel(value)} />
           <DropDownComp label="Gender" options={gender} placeholder={"select gender"} onChange={(value) => setSelectedGender(value)} />
-          <button className={`bg-green-500 text-white rounded-md font-semibold ${!selectedAge && !selectedGender && !selectedLevel && !selectedState ? "opacity-50 cursor-not-allowed" : ""}`} onClick={handleFilter} disabled={!selectedAge && !selectedGender && !selectedLevel && !selectedState}>Search</button>
-          <button className={`bg-red-500 text-white rounded-md font-semibold ${!selectedAge && !selectedGender && !selectedLevel && !selectedState ? "opacity-50 cursor-not-allowed" : ""}`} onClick={handleClearFilter} disabled={!selectedAge && !selectedGender && !selectedLevel && !selectedState}>Clear Filter</button>
+          <button className={`bg-green-500 text-white rounded-md py-2 lg:py-0 font-semibold ${!selectedAge && !selectedGender && !selectedLevel && !selectedState ? "opacity-50 cursor-not-allowed" : ""}`} onClick={handleFilter} disabled={!selectedAge && !selectedGender && !selectedLevel && !selectedState}>Search</button>
+          <button className={`bg-red-500 text-white rounded-md py-2 lg:py-0 font-semibold ${!selectedAge && !selectedGender && !selectedLevel && !selectedState ? "opacity-50 cursor-not-allowed" : ""}`} onClick={handleClearFilter} disabled={!selectedAge && !selectedGender && !selectedLevel && !selectedState}>Clear Filter</button>
         </div>
       </div>
 
